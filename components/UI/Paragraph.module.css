@@ -1,0 +1,10 @@
+.paragraph {
+  color: #666;
+  margin: 20px 0;
+  font-size: 12px;
+}
+@media (min-width: 1000px) {
+  .paragraph {
+    font-size: 14px;
+  }
+}

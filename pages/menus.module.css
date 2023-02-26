@@ -1,0 +1,46 @@
+.menu {
+  background-color: black;
+  text-align: center;
+}
+.menu h2 {
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.menus {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.menus h2 {
+  font-size: 20px;
+  border-bottom: 3px solid #3c3c3c;
+  font-weight: 600;
+  color: #3c3c3c;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* MENÚ */
+
+@media (min-width: 756px) {
+  .chef {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #efefef;
+    padding: 10px;
+  }
+}
+.chef .texto {
+  text-align: center;
+  padding: 3rem;
+}
+.chef .redes {
+  margin: 5rem auto;
+}
+.chef .redes a {
+  margin: 20px;
+}
