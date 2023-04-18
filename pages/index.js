@@ -512,7 +512,7 @@ export default function Home() {
           </Title>
           <div className={styles.grid}>
             <script src="https://s.electricblaze.com/widget.js" defer></script>
-            <div class="electricblaze-id-2Uhx8ho"></div>
+            <div className="electricblaze-id-2Uhx8ho"></div>
           </div>
         </div>
         <div className={styles.contacto} id="contacto">
