@@ -484,8 +484,8 @@ export default function Home() {
             </Link>
           </Title>
           <div className={styles.grid}>
-            <script src="https://s.electricblaze.com/widget.js" defer></script>
-            <div className="electricblaze-id-2Uhx8ho"></div>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div className="elfsight-app-054fbde3-40b0-41d8-a3c5-f383a6850497"></div>
           </div>
         </div>
         <div className={styles.contacto} id="contacto">
