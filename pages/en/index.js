@@ -484,16 +484,8 @@ export default function Home() {
             </Link>
           </Title>
           <div className={styles.grid}>
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-            <iframe
-              src="https://cdn.lightwidget.com/widgets/a8b8b75f35175710b9393b59f4aa4624.html"
-              position="absolute"
-              width="100%"
-              id="myId"
-              className="myClassname"
-              height="100%"
-              styles={{ height: "25px" }}
-            ></iframe>
+            <script src="https://s.electricblaze.com/widget.js" defer></script>
+            <div class="electricblaze-id-2Uhx8ho"></div>
           </div>
         </div>
         <div className={styles.contacto} id="contacto">
