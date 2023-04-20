@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import Menu from "../../components/Layout/Menu-en";
 import Head from "next/head";
@@ -248,7 +248,35 @@ const WINE_IMAGES = [
   },
 ];
 
+function useMobileHeight(height) {
+  const [mobileHeight, setMobileHeight] = useState(height);
+
+  function computeMobileHeight() {
+    const isMobile = window.innerWidth < 768;
+    setMobileHeight(isMobile ? "310px" : height);
+  }
+
+  useEffect(() => {
+    computeMobileHeight();
+
+    function handleResize() {
+      computeMobileHeight();
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [height]);
+
+  return mobileHeight;
+}
+
 export default function Home() {
+
+  const mobileHeight = useMobileHeight("100vh");
+
   return (
     <Fragment>
       <Head>
@@ -484,8 +512,14 @@ export default function Home() {
             </Link>
           </Title>
           <div className={styles.grid}>
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div className="elfsight-app-054fbde3-40b0-41d8-a3c5-f383a6850497"></div>
+          <iframe
+              src="https://snapwidget.com/embed/1031305"
+              className="snapwidget-widget"
+              allowTransparency="true"
+              frameBorder="0"
+              scrolling="no"
+              style={{ border: "none", overflow: "hidden", width: "100%", height: mobileHeight }}
+            /> 
           </div>
         </div>
         <div className={styles.contacto} id="contacto">
